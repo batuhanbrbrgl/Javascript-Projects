@@ -55,7 +55,18 @@ const numbers=[21,54,56,81,75];
 /*value=numbers.length;
 value = numbers[2];
 value= numbers[numbers.length -1];*/
-numbers[2]=1000;
+// numbers[2]=1000;
+// value=numbers;
+
+// value=numbers.indexOf(1000);
+// console.log(value);
+numbers.reverse();
 value=numbers;
-console.log(value);
+value=numbers.sort();
+value=numbers.sort(function(x,y)){
+    return x-y;
+}
+
+
+
 
