@@ -52,8 +52,10 @@ b = 20;
 console.log(a);*/
 
 const numbers=[21,54,56,81,75];
-value=numbers.length;
+/*value=numbers.length;
 value = numbers[2];
-value= numbers[numbers.length -1];
+value= numbers[numbers.length -1];*/
+numbers[2]=1000;
+value=numbers;
 console.log(value);
 
