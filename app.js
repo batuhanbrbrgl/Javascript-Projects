@@ -1,4 +1,4 @@
-function renkdegis(renk) {
+/*function renkdegis(renk) {
     var secim= confirm("Arka plan rengini değiştirmek istiyor musunuz ?");
     if(secim==false)
     return;
@@ -10,3 +10,43 @@ function renkdegis(renk) {
             document.body.style.background=renk;
         }
     }
+*/
+ Var 
+
+ var name = "Mustafa Murat";
+ console.log(name);
+
+ name = "Murat";
+
+ console.log(name);
+
+ Let
+
+ let a,b;
+
+ a = 10;
+ b = 20;
+
+ console.log(a+b);
+
+ Const
+
+ const name = "Batuhan";
+
+ console.log(name);
+
+ name = "Batu";
+
+ console.log(name);
+
+const a = [1,2,3,4,5];
+
+console.log(a);
+
+a.push(6);
+
+const b = 10;
+
+b = 20;
+
+console.log(a);
