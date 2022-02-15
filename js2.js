@@ -19,4 +19,6 @@ const programmer = {
 }
 
 value = programmer;
+
+value=programmer.address;
 console.log(value);
