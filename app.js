@@ -11,7 +11,7 @@
         }
     }
 */
- Var 
+ /*Var 
 
  var name = "Mustafa Murat";
  console.log(name);
@@ -49,4 +49,11 @@ const b = 10;
 
 b = 20;
 
-console.log(a);
+console.log(a);*/
+
+const numbers=[21,54,56,81,75];
+value=numbers.length;
+value = numbers[2];
+value= numbers[numbers.length -1];
+console.log(value);
+
