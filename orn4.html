@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function kontrol(sayi){
+            if(sayi.value %2==0){
+                alert("sayı çifttir");
+            }
+            else if(sayi.value %2==1){
+                alert("sayı tektir");
+            }
+            else{
+                alert("sayı değildir");
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" onchange="kontrol(this)" placeholder="sayı giriniz" >
+</body>
+</html>
