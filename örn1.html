@@ -5,9 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="örn1.js"></script>
+    <script>
+        function hesapla(){
+        let a=document.getElementById("kenar1").value;
+        let b=document.getElementById("kenar2").value;
+        let alan=a*b;
+        console.log(alan);  
+}
+    </script>
 </head>
 <body>
-    
+    <span>Kısa kenarı giriniz...</span>
+    <input type="number" id="kenar1" placeholder="kısakenar"><br>
+    <span>Uzun kenarı giriniz...</span>
+    <input type="number" id="kenar2" placeholder="uzunkenar"><br>
+    <input type="submit" value="hesapla" onclick="hesapla()">
 </body>
 </html>

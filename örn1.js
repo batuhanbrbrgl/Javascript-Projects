@@ -1,7 +1,10 @@
-var i;
-for(i=75; i<=1000; i+=25){
-    document.write("Sayi="+i+"<br>")
-    console.log(i);
+function hesapla(){
+    console.log(1);
+    let a=document.getElementById(kenar1).value;
+    let b=document.getElementById(kenar2).value;
+    let alan=a*b;
+    console.log(alan);
+    
 }
 
 
