@@ -1,8 +1,9 @@
-var metin="merhaba";
-let i ;
-for(i=metin.length-1;i>=0;i++){
-    console.log(metin.charAt(i));
+var i;
+for(i=75; i<=1000; i+=25){
+    document.write("Sayi="+i+"<br>")
+    console.log(i);
 }
+
 
 
 
