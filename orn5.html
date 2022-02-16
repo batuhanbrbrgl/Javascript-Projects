@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <script>
+            function kontrol(){
+            let isim = document.querySelector("#isim").value;
+            let ders = document.querySelector("#ders").value;
+            if(isim == "" || ders == ""){
+                alert("Tüm alanları doldurunuz...");
+            }else{
+                alert("Ders kaydedilmiştir...");
+            }
+        }
+    </script>
+<body>
+    <form action="" method="get" id="form">
+        <h2>Tek Ders Seçimi</h2>
+        <span>Adı Soyadı</span>
+        <input type="text" name="isim" id="isim"><br>
+        <span>Ders Adı</span>
+        <input type="text" name="ders" id="ders"><br>
+        <button type="submit" onclick="kontrol()">KONTROL ET</button>
+    </form>
+</body>
+</html>
