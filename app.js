@@ -51,7 +51,7 @@ b = 20;
 
 console.log(a);*/
 
-const numbers=[21,54,56,81,75];
+// const numbers=[21,54,56,81,75];
 /*value=numbers.length;
 value = numbers[2];
 value= numbers[numbers.length -1];*/
@@ -60,13 +60,33 @@ value= numbers[numbers.length -1];*/
 
 // value=numbers.indexOf(1000);
 // console.log(value);
-numbers.reverse();
-value=numbers;
-value=numbers.sort();
-value=numbers.sort(function(x,y)){
-    return x-y;
+// numbers.reverse();
+// value=numbers;
+// value=numbers.sort();
+// value=numbers.sort(function(x,y)){
+//     return x-y;
+// }
+
+// console.log(2==2);
+const user = "5";
+if(user ==="1"){
+    console.log("sayı1");
 }
-
-
-
-
+else if(user==="2"){
+    console.log("sayı2");
+}
+else if(user==="3"){
+    console.log("sayı3");
+}
+else if(user==="4"){
+    console.log("sayı4");
+}
+else if(user==="5"){
+    console.log("sayı5");
+}
+else{
+    console.log("işlem geçersiz");
+}
+// console.log(user === 100 ? "sayı 100" : "sayı 100 değil"); 
+// if (number === 100) console.log("sayı 100");
+// else console.log("sayı 100 değil");
