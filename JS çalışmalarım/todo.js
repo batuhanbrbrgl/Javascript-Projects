@@ -39,7 +39,7 @@
 
 // console.log(element);
 
-const element = document.querySelector("#clear-todos");
+// const element = document.querySelector("#clear-todos");
 
 // console.log(element);
 // console.log(element.id);
@@ -66,29 +66,39 @@ const element = document.querySelector("#clear-todos");
 // let elements2=document.querySelector("li:last-child");
 // console.log(elements2);
 // console.log(elements);
-let value;
+// let value;
 
-const todolist=document.querySelector(".list-group");
-const todo=document.querySelector(".list-group-item:nth-child(2)");
-const cardrow=document.querySelector(".card.row");
-value=todolist;
-value=todo;
-value=cardrow;
+// const todolist=document.querySelector(".list-group");
+// const todo=document.querySelector(".list-group-item:nth-child(2)");
+// const cardrow=document.querySelector(".card.row");
+// value=todolist;
+// value=todo;
+// value=cardrow;
 
-value=todolist.childNodes;
-value=todolist.children;
-value=cardrow.children[2].children[1].textContent="burası değişti";
+// value=todolist.childNodes;
+// value=todolist.children;
+// value=cardrow.children[2].children[1].textContent="burası değişti";
 
-value=todolist;
-value=todolist.firstElementChild;
-value=todolist.children.length;
-value=todolist.lastElementChild.style.fontSize="40px";
+// value=todolist;
+// value=todolist.firstElementChild;
+// value=todolist.children.length;
+// value=todolist.lastElementChild.style.fontSize="40px";
 
-value=cardrow.parentElement;
-value=cardrow.parentElement.parentElement;
-value=todo.previousElementSibling;
-value=todo.nextElementSibling.nextElementSibling;
+// value=cardrow.parentElement;
+// value=cardrow.parentElement.parentElement;
+// value=todo.previousElementSibling;
+// value=todo.nextElementSibling.nextElementSibling;
 
+// console.log(value);
 
+const newlink=document.createElement("a");
+const cardbody=document.getElementsByClassName("card-body")[1];
+// console.log(cardbody);
+newlink.id="clear-todos";
+newlink.className="btn btn-danger";
+newlink.href="http://www.google.com.tr";
+newlink.target="_blank";
+newlink.appendChild(document.createTextNode("Farklı sayfaya git"));
+cardbody.appendChild(newlink);
 
-console.log(value);
+console.log(newlink);
