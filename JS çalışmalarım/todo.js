@@ -55,5 +55,14 @@ const element = document.querySelector("#clear-todos");
 // element.style.marginLeft = "10px";
 // element.href = "http://www.google.com.tr";
 // element.target = "_blank";
-element.textContent = "sill";
-element.innerHTML="<span style= 'color:purple'>silll <span>"
+// element.textContent = "sill";
+// element.innerHTML="<span style= 'color:purple'>silll <span>"
+// const elements = document.querySelectorAll(".list-group-item");
+// elements.forEach(function(el){
+//     el.style.color = "purple";
+//     el.style.backgroundColor="cyan";
+// })
+
+let elements2=document.querySelector("li:last-child");
+console.log(elements2);
+// console.log(elements);
