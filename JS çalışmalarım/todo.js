@@ -114,14 +114,14 @@
 // console.log(todolist);
 
 
-const todo=document.querySelectorAll(".card-body")[1];
-const yenielement=document.createElement("h3");
+// const todo=document.querySelectorAll(".card-body")[1];
+// const yenielement=document.createElement("h3");
 
-yenielement.className="yeni döküman";
-yenielement.id="new-todo";
-yenielement.textContent="Yeni Todo";
+// yenielement.className="yeni döküman";
+// yenielement.id="new-todo";
+// yenielement.textContent="Yeni Todo";
 
-const oldtodo=document.querySelector("#tasks-title");
-todo.replaceChild(yenielement,oldtodo);
-console.log(todo);
-console.log(yenielement);
+// const oldtodo=document.querySelector("#tasks-title");
+// todo.replaceChild(yenielement,oldtodo);
+// console.log(todo);
+// console.log(yenielement);
