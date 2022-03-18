@@ -100,6 +100,6 @@
 
 
     // console.log("tıklandı");
-}
+// }
 
 // console.log(cardbody);
