@@ -91,14 +91,37 @@
 
 // console.log(value);
 
-const newlink=document.createElement("a");
-const cardbody=document.getElementsByClassName("card-body")[1];
-// console.log(cardbody);
-newlink.id="clear-todos";
-newlink.className="btn btn-danger";
-newlink.href="http://www.google.com.tr";
-newlink.target="_blank";
-newlink.appendChild(document.createTextNode("Farklı sayfaya git"));
-cardbody.appendChild(newlink);
+// const newlink=document.createElement("a");
+// const cardbody=document.getElementsByClassName("card-body")[1];
+// // console.log(cardbody);
+// newlink.id="clear-todos";
+// newlink.className="btn btn-danger";
+// newlink.href="http://www.google.com.tr";
+// newlink.target="_blank";
+// newlink.appendChild(document.createTextNode("Farklı sayfaya git"));
+// cardbody.appendChild(newlink);
 
-console.log(newlink);
+// console.log(newlink);
+
+// const todolist=document.querySelector("ul.list-group");
+// const todos=document.querySelectorAll("li.list-group-item");
+
+// todos[3].remove();
+
+// todolist.removeChild(todos[2]);
+
+// console.log(todos);
+// console.log(todolist);
+
+
+const todo=document.querySelectorAll(".card-body")[1];
+const yenielement=document.createElement("h3");
+
+yenielement.className="yeni döküman";
+yenielement.id="new-todo";
+yenielement.textContent="Yeni Todo";
+
+const oldtodo=document.querySelector("#tasks-title");
+todo.replaceChild(yenielement,oldtodo);
+console.log(todo);
+console.log(yenielement);
