@@ -81,9 +81,18 @@ function loadAllTodosToUI() {
 }
 function addTodo(e) {
     const newTodo = todoInput.value.trim();
-
+    const todos = getTodosFromStorage();
+    let sameTodo = false;
+    todos.forEach(function(todo){
+        if (todo === newTodo){
+            sameTodo = true;
+            return sameTodo;
+        }
+    })
     if (newTodo === "") {
         showAlert("danger", "lütfen bir todo girin!..");
+    } else if (sameTodo === true){
+        showAlert("warning","Todo listede zaten bulunuyor.")
     }
     else {
         addTodoToUI(newTodo);
@@ -91,7 +100,7 @@ function addTodo(e) {
         showAlert("success", "Todo başarı ile eklendi...")
     }
 
-
+    todoInput.value = "";
     e.preventDefault();
 }
 function getTodosFromStorage() {
