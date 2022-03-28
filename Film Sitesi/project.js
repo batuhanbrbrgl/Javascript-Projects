@@ -8,6 +8,7 @@ const ui = new UI();
 
 eventListeners();
 
+
 function eventListeners() {
     form.addEventListener("submit", addFilm);
 }
@@ -18,16 +19,16 @@ function addFilm(e) {
     const url = urlElement.value;
 
     if (title === "" || director === "" || url === "") {
-
+        ui.displayMessages("Tüm Alanları Doldurunuz...", "danger");
 
     } else {
         const newFilm = new Film(title, director, url);
         ui.addFilmToUI(newFilm);
-
+        ui.displayMessages("Tüm Alanlar Başarı ile Dolduruldu...", "success")
 
     }
 
-    ui.cleartitle(titleElement, urlElement, directorElement);
+    ui.clearInputs(titleElement, urlElement, directorElement);
 
     e.preventDefault();
 }
