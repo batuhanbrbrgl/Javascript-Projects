@@ -5,7 +5,7 @@ document.getElementById("change").addEventListener("click", change);
 function change() {
     const xhr = new XMLHttpRequest();
 
-    xhr.open('GET', "http://api.exchangeratesapi.io/v1/latest?access_key=74306ac19acfff24c0ffef8d1819b99d&format=1")
+    xhr.open('GET', "http://api.exchangeratesapi.io/v1/latest?access_key=74306ac19acfff24c0ffef8d1819b99d&format=2")
 
     xhr.onload = function() {
 
