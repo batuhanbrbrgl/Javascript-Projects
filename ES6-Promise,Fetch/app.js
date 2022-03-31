@@ -67,14 +67,3 @@ pro2("merhaba")
     .catch(err => { console.error(err); })
 
 
-// }
-
-// // getData("Merhaba").catch(function(err) {
-// //         console.log(err)
-// //     })
-// // getData("Merhaba").then(function(response) {
-// //     console.log(response)
-// // })
-// getData(123)
-//     .then(response => console.log("Gelen Değer: " + response))
-//     .catch(err => console.error(err))
