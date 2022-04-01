@@ -55,7 +55,7 @@ function pro2(number) {
 
 
 }
-pro2("merhaba")
+pro2(23423)
     .then(response => {
         console.log(response);
         return response + 2;
@@ -65,5 +65,3 @@ pro2("merhaba")
         console.log(response2);
     })
     .catch(err => { console.error(err); })
-
-

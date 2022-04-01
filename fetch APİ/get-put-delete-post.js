@@ -69,7 +69,7 @@ const request = new Request();
 
 // request.post("https://jsonplaceholder.typicode.com/albums",{userId:1,title:"Thriller"})
 // .then(newAlbum => console.log(newAlbum))
-// .catch(err => console.log(err));
+// .catch(err => coX"nsole.log(err));
 
 
 // request.put("https://jsonplaceholder.typicode.com/albums/10", { userId: 10, title: "Batuhan BERBEROĞLU" })
