@@ -47,7 +47,12 @@ function veriAl(e) {
 }
 
 function hepsiniTemizle() {
+
     //tüm arananları temizle
+    if (confirm("Emin misiniz ?")) {
+        Storage.arananKullanıcılarıSil()
+        ui.tümarAramalarıTemizleUI();
+    }
 
 
 
@@ -56,7 +61,13 @@ function hepsiniTemizle() {
 }
 
 function tümAramalar() {
-    //Arananları Storagedan al ve UI ye yaz
+    let users = Storage.arananlarıDepodanAl();
+    let result = "";
+    users.forEach(user => {
 
+            result += `<li class="list-group-item">{${user}</li>`
+        })
+        //Arananları Storagedan al ve UI ye yaz
 
+    sonArama.innerHTML = result
 }

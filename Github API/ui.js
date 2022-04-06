@@ -106,6 +106,22 @@ class UI {
     arananKullanıcıyıEkleUI(username) {
         let users = Storage.arananlarıDepodanAl()
 
+        if (users.indexOf(username) === -1) {
+            // <li class="list-group-item">asdaskdjkasjkşdjşasjd</li>
+            const li = document.createElement("li");
 
+            li.className = "list-group-item"
+            li.textContent = username
+
+            this.lastUsers.appendChild(li)
+        }
+
+
+    }
+    tümarAramalarıTemizleUI() {
+        while (this.lastUsers.firstElementChild !== null) {
+            this.lastUsers.removeChild(this.lastUsers.firstElementChild)
+
+        }
     }
 }
