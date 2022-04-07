@@ -33,3 +33,30 @@
 // let btt = document.querySelector("#batu")
 
 // btt.innerHTML = `${btt.innerHTML} <small style=color:green>${fullname}</small>`
+
+
+
+// let firstchild = document.querySelector("ul#list>li:first-child").innerHTML = "DSADASDi"
+
+// let lastchild = document.querySelector("ul#list>li:last-child")
+
+// let uldom = document.querySelector("ul#list")
+// let lidom = document.createElement('li')
+
+// lidom.innerHTML = "Oluşturulan li"
+
+// // uldom.append(lidom)
+
+
+// uldom.prepend(lidom)
+
+// let batu = document.querySelector("#btt")
+
+// batu.classList.add("list")
+
+
+// let batu = "100"
+
+
+// console.log(batu === "100")
+// console.log(!!2)
