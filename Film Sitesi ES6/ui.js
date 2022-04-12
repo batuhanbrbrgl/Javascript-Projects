@@ -38,6 +38,11 @@ class UI {
 
         div.className = `alert alert-${type}`;
         div.textContent = message;
+        div.style.position = "fixed";
+        div.style.display = "flex"
+        div.style.right = "10px"
+        div.style.top = "0px"
+        div.style.animation = "showNotification 500ms ease-in-out forwards"
 
         cardBody.appendChild(div);
 
@@ -45,7 +50,7 @@ class UI {
         setTimeout(function() {
             div.remove();
 
-        }, 1000);
+        }, 3000);
 
 
 
