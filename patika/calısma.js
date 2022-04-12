@@ -60,4 +60,8 @@
 
 // console.log(batu === "100")
 // console.log(!!2)
-sadfasdf
+let userName = prompt("Kullanıcı adınızı giriniz")
+let info = document.querySelector("#info")
+
+
+info.innerHTML = `${userName.length > 0 ? userName : "Kullanıcı bilgisi bulunamadı"}`
