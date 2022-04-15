@@ -60,8 +60,33 @@
 
 // console.log(batu === "100")
 // console.log(!!2)
-let userName = prompt("Kullanıcı adınızı giriniz")
-let info = document.querySelector("#info")
+// let userName = prompt("Kullanıcı adınızı giriniz")
+// let info = document.querySelector("#info")
 
 
-info.innerHTML = `${userName.length > 0 ? userName : "Kullanıcı bilgisi bulunamadı"}`
+// info.innerHTML = `${userName.length > 0 ? userName : "Kullanıcı bilgisi bulunamadı"}`
+
+
+// function btt(firstname, lastname) {
+//     let info = `Merhaba ${firstname} ${lastname}`
+//     return info
+// }
+// let info = btt("batu", "brbrgl")
+// console.log(info)
+
+
+
+// function ekranayazi(id, info) {
+//     let object = document.getElementById(id)
+//     object.innerHTML = info
+
+
+// }
+
+// ekranayazi('btt', "batuhandro")
+// ekranayazi('batu', "Buraya Yazıldı")
+
+// let yazi = document.getElementById("btt")
+
+// yazi.innerHTML = "Batuhan"
+// yazi.className = "hann"
