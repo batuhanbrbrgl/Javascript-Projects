@@ -90,3 +90,21 @@
 
 // yazi.innerHTML = "Batuhan"
 // yazi.className = "hann"
+// let firstname = "Lorem"
+
+// function greetings(firstname = "") {
+//     console.log(`Merhaba ${firstname}`)
+// }
+// greetings("Apple")    
+// function greetings2(firstname, lastname) {
+//     let info = `Merhaba ${firstname} ${lastname}`
+//     return info
+// }
+// let greetingsInfo = greetings2("Ad", "Soyad")
+// console.log(greetingsInfo)
+
+// function domIdWriteInfo(id, info) {
+//     let domObject = document.querySelector(`#${id}`)
+//     domObject.innerHTML = info
+// }
+// domIdWriteInfo('greeting', greetings2("lorem", "ipsum"))
