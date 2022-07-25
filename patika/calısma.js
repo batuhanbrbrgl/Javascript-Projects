@@ -108,3 +108,53 @@
 //     domObject.innerHTML = info
 // }
 // domIdWriteInfo('greeting', greetings2("lorem", "ipsum"))
+
+
+// function hello(firstName) {
+//     console.log(`Merhaba ${firstName}`)
+// }
+// hello("Javascript")
+
+// const hellofunc = (firstName) => { console.log(`Merhaba ${firstName}`) }
+// hellofunc("hellofnc")
+
+// const hellofunc2 = firstName => console.log(`Merhaba ${firstName}`)
+// hellofunc2("hellofunc2")
+
+// const hellofunc3 = (firstName, lastName) =>
+//     console.log(`Merhaba ${firstName} ${lastName}`)
+// hellofunc3("Batuhan", "Berberoğlu")
+
+// const hellofunc4 = (firstName, lastName) => {
+//     let info = `Merhaba ${firstName} ${lastName}`
+//     console.log(info)
+//     return info
+// }
+
+
+// let greet = document.querySelector("#greeting")
+// greet.addEventListener("click", domClick)
+
+// function domClick() {
+//     console.log("tıklandi")
+//     this.style.color == "red" ? this.style.color = "green" : this.style.color = "red"
+// }
+let counter = 0
+let arttir = document.querySelector("#increase")
+let azalt = document.querySelector("#decrease")
+let sayi = document.querySelector("#counter")
+
+sayi.innerHTML = counter
+arttir.addEventListener("click", clickEvent)
+azalt.addEventListener("click", clickEvent)
+
+function clickEvent() {
+    console.log(this.id)
+    if (this.id == "increase") {
+        sayi.innerHTML = counter += 1
+
+
+    } else {
+        sayi.innerHTML = counter -= 1
+    }
+}
