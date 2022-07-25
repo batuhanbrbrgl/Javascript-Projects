@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>Bu nedir?</title>
+    <meta charset="UTF-8" />
+    <!-- TensorFlow.js yukleyelim. -->
+    <script src="https://unpkg.com/@tensorflow/tfjs@0.10.3"></script>
+    <!-- MobileNet yukleyelim -->
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet@0.0.1"></script>
+    <-- Kendi dosyamızı yükleyelim -->
+        <script src="init.js"></script>
+</head>
+
+<body onload="setup()">
+    <div style="text-align:center">
+        <h1>
+            Bu nedir?
+        </h1>
+        <video id="video">Video bulunamadı.</video>
+        <pre id="tahminler"></pre>
+        <canvas id="canvas" style="display:none"></canvas>
+    </div>
+</body>
+
+</html>
