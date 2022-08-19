@@ -139,22 +139,30 @@
 //     console.log("tıklandi")
 //     this.style.color == "red" ? this.style.color = "green" : this.style.color = "red"
 // }
-let counter = 0
-let arttir = document.querySelector("#increase")
-let azalt = document.querySelector("#decrease")
-let sayi = document.querySelector("#counter")
+// let counter = 0
+// let arttir = document.querySelector("#increase")
+// let azalt = document.querySelector("#decrease")
+// let sayi = document.querySelector("#counter")
 
-sayi.innerHTML = counter
-arttir.addEventListener("click", clickEvent)
-azalt.addEventListener("click", clickEvent)
+// sayi.innerHTML = counter
+// arttir.addEventListener("click", clickEvent)
+// azalt.addEventListener("click", clickEvent)
 
-function clickEvent() {
-    console.log(this.id)
-    if (this.id == "increase") {
-        sayi.innerHTML = counter += 1
+// function clickEvent() {
+//     console.log(this.id)
+//     if (this.id == "increase") {
+//         sayi.innerHTML = counter += 1
 
 
-    } else {
-        sayi.innerHTML = counter -= 1
-    }
-}
+//     } else {
+//         sayi.innerHTML = counter -= 1
+//     }
+// }
+//VERİLERİ EKLEME 
+let user = { userName: "batuhanberberoglu", isActive: true }
+console.log(user)
+localStorage.setItem('userInfo', JSON.stringify(user))
+
+let userInfo = localStorage.getItem('userInfo') //bilgiyi aldık 
+userInfo = JSON.parse(userInfo)
+console.log(userInfo)
