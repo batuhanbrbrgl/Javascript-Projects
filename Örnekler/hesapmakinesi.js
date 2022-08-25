@@ -69,5 +69,14 @@ btnesit.onclick = function(e) {
 }
 
 btnesit.onclick = function(e) {
-    gosterge.textContent = sonuc + Number(gosterge.textContent)
+    if (opt == "+") {
+        gosterge.textContent = sonuc + Number(gosterge.textContent)
+    } else if (opt == "-") {
+        gosterge.textContent = sonuc - Number(gosterge.textContent)
+    } else if (opt == "*") {
+        gosterge.textContent = sonuc * Number(gosterge.textContent)
+
+    } else if (opt == "/") {
+        gosterge.textContent = sonuc / Number(gosterge.textContent)
+    }
 }
