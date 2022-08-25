@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            display: block
+        }
+        
+        table,
+        td {
+            border-top: 1px solid green
+        }
+    </style>
+</head>
+
+<body>
+
+    <label>Satır Sayısı</label>
+    <input type="text" id="satir">
+
+    <label>Sütun Sayısı</label>
+    <input type="text" id="sütun">
+
+    <label for=""><button id="olustur">Olustur</button></label>
+    <div id="goster"></div>
+
+    <script>
+        let olustur = document.querySelector("#olustur")
+        olustur.onclick = function() {
+            let satir = document.querySelector("#satir").value
+            let sütun = document.querySelector("#sütun").value
+
+            let table = document.createElement("table")
+            for (let i = 0; i < satir; i++) {
+                let tr = document.createElement("tr")
+                table.appendChild(tr)
+                for (let j = 0; j < sütun; j++) {
+                    let td = document.createElement("td")
+                    td.innerHTML = 10;
+                    tr.appendChild(td)
+                }
+
+            }
+            document.querySelector("#goster").appendChild(table)
+        }
+    </script>
+</body>
+
+</html>

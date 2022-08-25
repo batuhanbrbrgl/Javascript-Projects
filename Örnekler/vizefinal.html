@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            display: block
+        }
+    </style>
+</head>
+
+<body>
+    <label for="">Vize Notu</label>
+    <input type="text" id="vize">
+
+    <label for="">Final Notu</label>
+    <input type="text" id="final">
+
+    <input type="button" id="gonder" value="gonder">
+    <div id="cikti"></div>
+
+
+
+    <script>
+        let viz = document.getElementById("vize")
+        let fin = document.getElementById("final")
+        let but = document.getElementById("gonder")
+        let son = document.getElementById("cikti")
+
+
+
+        but.onclick = function() {
+            let vze = Number(viz.value)
+            let fnl = Number(fin.value)
+
+            let ortalama = vze * 40 / 100 + fnl * 60 / 100
+            var durum = ""
+            if (ortalama >= 50 && fnl >= 50) {
+                durum = "GEÇTİNİZ"
+            } else if (ortalama >= 50 && fnl < 50) {
+                durum = "FİNAL NOTUNDAN DOLAYI GEÇEMEDİNİZ"
+            } else {
+                durum = "KALDINIZ"
+
+            }
+
+            son.innerHTML = "Notunuz" + ortalama + durum
+
+        }
+    </script>
+</body>
+
+</html>
