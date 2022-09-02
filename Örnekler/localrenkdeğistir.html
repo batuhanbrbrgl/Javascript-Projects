@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn {
+            display: block;
+            position: absolute;
+            top: 100px;
+            bottom: 100px;
+            left: 100px;
+            right: 100px;
+            width: calc(100% - 200px);
+            height: calc(100% - 200px);
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn">Rastgele Renk Değiştir</button>
+
+
+
+
+
+
+    <script>
+        const btnn = document.querySelector("#btn")
+
+        btnn.onclick = () => {
+            let kirmizi = Math.floor(Math.random() * 255)
+            let mavi = Math.floor(Math.random() * 255)
+            let yesil = Math.floor(Math.random() * 255)
+
+            let renk = `rgb(${kirmizi},${mavi},${yesil})`
+
+            btnn.style.background = renk
+
+            localStorage.setItem('renk', renk)
+
+
+        }
+        if (localStorage.getItem('renk')) {
+            btn.style.background = localStorage.getItem('renk')
+        }
+    </script>
+</body>
+
+</html>

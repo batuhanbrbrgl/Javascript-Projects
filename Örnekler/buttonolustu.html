@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kare-button {
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+            border: solid green 1px;
+            margin: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <button id="ekle"> Dinamik buton ekle</button>
+    <div id="panel"></div>
+
+
+
+
+
+    <script>
+        let panelDiv = document.querySelector("#panel");
+        let pnl = document.querySelector("#ekle")
+        var sayi = 1;
+
+
+
+        ekle.onclick = function() {
+
+            var btn = document.createElement("button")
+            btn.textContent = sayi++
+                btn.classList = "kare-button"
+            panelDiv.appendChild(btn)
+
+        }
+    </script>
+</body>
+
+</html>

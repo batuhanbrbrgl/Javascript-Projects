@@ -21,7 +21,9 @@
     <input type="text" id="final">
 
     <input type="button" id="gonder" value="gonder">
-    <div id="cikti"></div>
+    <div id="cikti">
+
+    </div>
 
 
 
@@ -30,7 +32,7 @@
         let fin = document.getElementById("final")
         let but = document.getElementById("gonder")
         let son = document.getElementById("cikti")
-
+fg
 
 
         but.onclick = function() {
@@ -47,8 +49,9 @@
                 durum = "KALDINIZ"
 
             }
-
-            son.innerHTML = "Notunuz" + ortalama + durum
+            let btn = document.createElement("input")
+            btn.classList="input-group input-group-sm mb-3"
+            son.innerHTML = "Notunuz" + " " + ortalama + " " + durum
 
         }
     </script>
