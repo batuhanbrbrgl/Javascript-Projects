@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fly Menu</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #container {
+            width: 500px;
+            margin: auto;
+        }
+        
+        #flyMenu {
+            width: 370px;
+            max-width: 100%;
+            float: left;
+            padding: 50px 35px 40px 35px;
+            text-align: center;
+            background-color: #444444;
+            transition: all 0.3s ease-in-out;
+            position: fixed;
+            float: right;
+            right: 0;
+            top: 0;
+            height: 100%;
+            z-index: 9998;
+            transform: translate3d(370px, 0, 0);
+        }
+        
+        #flyMenu.open {
+            transform: translate3d(0, 0, 0) !important;
+        }
+        
+        #flyMenu .photo {
+            position: relative;
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 30px auto;
+            z-index: 1;
+        }
+        
+        #flyMenu .photo::after {
+            content: "";
+            position: absolute;
+            right: -10px;
+            bottom: -7px;
+            display: block;
+            border-radius: 100%;
+            width: 100%;
+            height: 100%;
+            opacity: .3;
+            z-index: -1;
+            background-image: -webkit-repeating-radial-gradient(center center, #fff, #fff 1px, transparent 0px, transparent 100%);
+            background-image: -ms-repeating-radial-gradient(center center, #fff, #fff 1px, transparent 0px, transparent 100%);
+            background-size: 6px 6px;
+        }
+        
+        #flyMenu .photo img {
+            width: 100%;
+            height: auto;
+            border-radius: 100%;
+            border: 3px solid #04B5C1;
+        }
+        
+        #flyMenu .title {
+            margin-top: 15px;
+        }
+        
+        #flyMenu .title h2 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #f5f5f5;
+        }
+        
+        #flyMenu .title h4 {
+            font-size: 15px;
+            font-weight: 300;
+            color: #bbb;
+        }
+        
+        #flyMenu .mainMenu {
+            margin: 30px 0;
+        }
+        
+        #flyMenu .mainMenu li a {
+            display: block;
+            color: #ffffff;
+            padding: 10px 0;
+            opacity: .7;
+            font-size: 14px;
+        }
+        
+        #flyMenu .mainMenu li a:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="flyMenu">
+        <div class="flyMenuContent">
+            <div class="flyMenuHeader">
+
+                <div class="title">
+                    <h2>Batuhan BERBEROĞLU</h2>
+                    <h4>Web Designer / Developer</h4>
+                </div>
+            </div>
+            <ul class="mainMenu">
+                <li><a href="#">Anasayfa</a></li>
+                <li><a href="#">Hakkımda</a></li>
+                <li><a href="#">Özgeçmiş</a></li>
+                <li><a href="#">Portfolyo</a></li>
+                <li><a href="#">İletişim</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="container">
+        <h2>Fly Menu Testing Page</h2>
+        <button id="flyToggleButton" type="button">Aç / Kapa</button>
+
+        <script>
+            let flyToggleButton = document.getElementById("flyToggleButton");
+            let flyMenu = document.getElementById("flyMenu");
+
+            flyToggleButton.addEventListener("click", (e) => {
+                e.preventDefault();
+                flyMenu.classList.toggle("open");
+            });
+        </script>
+    </div>
+</body>
+
+</html>
