@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasarım Kodlama</title>
+    <style>
+        dialog {
+            padding: 0;
+            border: none;
+            border-radius: 5px;
+            width: 30vw;
+        }
+        
+        dialog::backdrop {
+            background: url(3px-tile.png) rgba(99, 110, 114, .9);
+        }
+        
+        dialog div {
+            border-bottom: 1px solid #b2bec3;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="ac">Modal Aç</button>
+    <output>Bilgiler</output>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora iusto doloremque, quia maiores modi cumque quis optio nobis fugiat. Beatae, soluta perferendis. Dolore nesciunt alias, officiis iusto excepturi facere dolores?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora iusto doloremque, quia maiores modi cumque quis optio nobis fugiat. Beatae, soluta perferendis. Dolore nesciunt alias, officiis iusto excepturi facere dolores?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora iusto doloremque, quia maiores modi cumque quis optio nobis fugiat. Beatae, soluta perferendis. Dolore nesciunt alias, officiis iusto excepturi facere dolores?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora iusto doloremque, quia maiores modi cumque quis optio nobis fugiat. Beatae, soluta perferendis. Dolore nesciunt alias, officiis iusto excepturi facere dolores?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora iusto doloremque, quia maiores modi cumque quis optio nobis fugiat. Beatae, soluta perferendis. Dolore nesciunt alias, officiis iusto excepturi facere dolores?</p>
+
+    <dialog id="modal">
+        <form action="" method="dialog">
+            <div>
+                <h2>Modal Panel</h2>
+            </div>
+            <div>
+                <p>
+                    Abonelik sözleşmesini kabul etmek için "Tamam" butonuna tıklayın.
+                </p>
+            </div>
+            <div>
+                <menu>
+                    <button style="font-size:15px;width:150px;border:none;background:green;color:white;padding:10px" value="onay">Tamam</button>
+                    <button style="font-size:15px;width:150px;border:none;background:red;color:white;padding:10px" value="iptal">İptal</button>
+                </menu>
+            </div>
+        </form>
+    </dialog>
+
+    <script>
+        var modalAc = document.querySelector("#ac");
+        var modal = document.querySelector("#modal");
+        var output = document.querySelector("output");
+
+        modalAc.addEventListener("click", function() {
+
+            modal.showModal();
+        });
+
+        modal.addEventListener("close", function() {
+
+            if (modal.returnValue == "onay") {
+                output.value = "abone oldunuz.";
+            } else {
+                output.value = "abonelik iptal ettiniz.";
+
+            }
+        });
+    </script>
+</body>
