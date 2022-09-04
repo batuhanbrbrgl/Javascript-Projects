@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        tr,
+        td,
+        th {
+            border: 1px solid black;
+        }
+        
+        div {
+            float: left;
+            margin: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>NO</th>
+                        <th>Gonderen Kişi</th>
+                        <th>Gönderme Tarihi</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody id="tablo">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <table>
+        <tr>
+            <td>Gönderen Kişi</td>
+            <td>
+                <p id="kisi"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>Başlık</td>
+            <td>
+                <p id="baslik"></p>
+            </td>
+
+        </tr>
+        <tr>
+            <td>Konu</td>
+            <td>
+                <p id="konu"></p>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        var mailler = [
+            mail = {
+                ID: 1,
+                Gönderen: "Ali",
+                GönderenTarihi: "10.09.2021",
+                Baslik: "Baslik 1",
+                Konu: "Konu 1"
+            },
+            mail = {
+                ID: 2,
+                Gönderen: "Batuhan",
+                GönderenTarihi: "10.09.2022",
+                Baslik: "Baslik 2",
+                Konu: "Konu 2"
+            },
+            mail = {
+                ID: 3,
+                Gönderen: "Kaan",
+                GönderenTarihi: "10.10.2021",
+                Baslik: "Baslik 3",
+                Konu: "Konu 3"
+            },
+            mail = {
+                ID: 4,
+                Gönderen: "Hasan",
+                GönderenTarihi: "12.09.2021",
+                Baslik: "Baslik 4",
+                Konu: "Konu 4"
+            },
+        ]
+
+
+        let tablo = document.querySelector('#tablo')
+        let kisi = document.querySelector('#kisi')
+        let baslik = document.querySelector('#baslik')
+        let konu = document.querySelector('#konu')
+
+        mailler.forEach(element => {
+            var satir = "<tr><td>" + element.ID + "</td><td>" + element.Gönderen + "</td><td>" + element.GönderenTarihi + "</td><td><button onclick='Goster(" + element.ID + ")'>GOSTER</button></td></tr>"
+
+            tablo.innerHTML += satir
+        })
+
+        function Goster(id) {
+            var index = mailler.findIndex(mail => mail.ID == id)
+            kisi.innerHTML = mailler[index].Gönderen;
+            baslik.innerHTML = mailler[index].Baslik;
+            konu.innerHTML = mailler[index].Konu
+
+        }
+    </script>
+
+</body>
+
+</html>
